@@ -16,25 +16,17 @@
     height: auto;
     }
 
-    @media only screen and (min-height: 600px) {
-        img {
-            height: 100%;
-        }
-    }
-
     .rectangle {
         display: inline-block;
         align-items: center;
         justify-content: center;
-        width: 50vh;
-        height: 50vh;
-        width: auto;
-        height: auto;
+        width: 70vh;
+        height: 70vh;
 
         background-color: white;
         overflow: hidden;
         text-align: center;
-        border-radius: 500px;
+        border-radius: 5000px;
         border: 10px solid rgb(192, 0, 192);
         box-shadow: 10px 10px 10px  rgb(0, 0, 0);
         background-color: white;
@@ -45,6 +37,12 @@
         background-repeat: repeat;
         background-size: 5% 5%; /* Width and height in percentage */
     }
+
+    @media only screen and (max-width: 600px) {
+    body {
+        background-size: contain;
+    }
+   }
 
   </style>
 
